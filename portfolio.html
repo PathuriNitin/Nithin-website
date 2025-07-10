@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nithin - Aspiring Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <div class="main-card" id="home">
+        <div class="navbar">
+            <div class="navbar-left">
+                <div class="name">NITHIN</div>
+                <div class="navbar-menu">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#project">PROJECT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a href="https://github.com/PathuriNitin" target="_blank"><img src="images/git.svg" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/pathuri-nithin-437577284/" target="_blank"><img src="images/Linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://drive.google.com/file/d/1I4lzZD9ULHQm_H_pgsRrSYHc34kWsR--/view?usp=sharing" target="_blank"><button class="click">Download CV</button></a>
+                <a href="#contact"><button class="click">Get in Touch</button></a>
+            </div>
+        </div>
+
+        <div class="role">
+        SOFTWARE DEVELOPER
+        </div>
+
+        <div class="about" id="about">
+            <img src="images/NITHIN.jpg" alt="Nithin">
+            <div class="about-info">
+                <p class="p1">Nithin is an aspiring software developer based in Hyderabad, India, driven by a passion for creating impactful digital solutions.</p>
+                <p class="p2">With a foundational understanding of programming principles and a keen eye for detail, Nithin is dedicated to building robust and user-friendly applications. He focuses on continuous learning and adapting to new technologies, aiming to contribute to innovative projects that solve real-world problems. Nithin is committed to writing clean, efficient code and collaborating effectively within a team environment to deliver high-quality software.</p>
+            </div>
+        </div>
+
+        <div class="skill-section">
+            <div class="skill-title">SKILLS</div>
+            <div class="skill-grid">
+                <ul id="skill-list-1">
+                    <li>JAVA</li>
+                    <li>SQL</li>
+                    <li>SPRING BOOT</li>
+                    <li>REACT.JS</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>DATA STRUCTURES</li>
+                    <li>OOPS</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-section" id="project">
+            <div class="project-head">PROJECTS</div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Employee Management System</h3>
+                    <p>Built a full-stack employee management application with CRUD operations and a global search bar to filter employees by ID, name, or Aadhar. Used ReactJS for the frontend and Spring Boot with MySQL for the backend, implementing RESTful APIs and proper validation.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/PathuriNitin/EmployeeManagementSystem" target="_blank">Know More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                    <p>Developed a responsive Weather App using ReactJS that fetches and displays real-time weather data based on user-input city names. Integrated with a public weather API and implemented dynamic UI updates.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/PathuriNitin/WEATHER-DASHBOARD" target="_blank">Know More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Bank Management System</h3>
+                    <p>Developed a console-based application to manage basic banking operations with PIN authentication and duplicate account number prevention. Included features like account creation, deposit/withdrawal, balance check, and account listing.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/PathuriNitin/BankManagementSystem" target="_blank">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section" id="contact">
+            <div class="contact-head">CONTACT ME</div>
+            <div class="contact-info">
+                <p>Feel free to reach out to me for connection, or just to say hello! I'm always open to new opportunities and discussions.</p>
+                <p>
+                    <a href="mailto:pathurinithin08@gmail.com">
+                        <img src="images/email.svg" alt="Email Icon">
+                        pathurinithin08@gmail.com
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/pathuri-nithin-437577284/" target="_blank">
+                        <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                        LinkedIn Profile
+                    </a>
+                </p>
+                <p>
+                    <a href="tel:+919063541094">
+                        <img src="images/phone.svg" alt="Phone Icon">
+                        +91 90635 41094
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const skillList = document.getElementById('skill-list-1');
+        const skillGrid = document.querySelector('.skill-grid');
+        const skillListClone = skillList.cloneNode(true);
+        skillListClone.removeAttribute('id'); 
+        skillGrid.appendChild(skillListClone);
+    </script>
+
+</body>
+</html>
